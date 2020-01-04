@@ -1,7 +1,7 @@
 require("dotenv").config();
 
 const mysql = require("mysql");
-const keys = require("./keys.js");
+const keys = require("../keys.js");
 
 const connection = mysql.createConnection({
   host: "localhost",
@@ -12,11 +12,11 @@ const connection = mysql.createConnection({
 });
 
 connection.connect(function(err) {
-    if (err) {
-      console.error("error connecting: " + err.stack);
-      return;
-    }
-    console.log("connected as id " + connection.threadId);
-  });
+  if (err) {
+    console.error("error connecting: " + err.stack);
+    return;
+  }
+  console.log("connected as id " + connection.threadId);
+});
 
 module.exports = connection;
