@@ -9,7 +9,6 @@ $(function() {
 		};
 
 	if (!devoured) {
-		console.log("you already ate that!");
 		alert("You already ate that burger!")
 	} else {
 		$.ajax("/api/burgers/" + id, {
