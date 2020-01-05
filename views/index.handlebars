@@ -8,6 +8,8 @@
 	{{/each}}
 </ul>
 
+<hr>
+
 <ul>
 	{{#each burgers}}
 		{{#if devoured}}
@@ -16,9 +18,12 @@
 	{{/each}}
 </ul>
 
+<hr>
+
 <form class="create-form">
 	<div class="form-group">
-			<input type="text" id="burger" name="name">
+		<div>Add your own burger to the menu!</div>
+		<input type="text" id="burger" name="name">
 	</div>
-	<button type="submit">Submit</button>
+	<button type="submit" id="submit">Submit</button>
 </form>

@@ -1,0 +1,46 @@
+body, html {
+  height: 100%;
+}
+
+body{
+  background-image: url("../images/burger.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.container {
+	margin: auto;
+	background-color: white;
+	opacity: 0.8;
+	margin: 10%;
+	padding-top: 1px;
+	padding-bottom: 20px;
+}
+
+h1 {
+	text-align: center;
+}
+
+button {
+	background-color: rgba(97, 15, 15, 0.938);
+	color: white;
+}
+
+#submit {
+	background-color: rgba(76, 117, 76, 0.842);
+	color: white;
+}
+
+ul, form {
+	text-align: center;
+	font-weight: bolder;
+}
+
+ul {
+	list-style: none;
+}
+
+hr {
+	margin: 10px;
+}
